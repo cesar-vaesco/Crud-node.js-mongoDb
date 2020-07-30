@@ -1,9 +1,12 @@
 const express = require('express');
 const app = express();
+const path = require('path');
 const morgan = require('morgan');
+const colors = require('colors');
 
 //Settings - configuraciones
-
+app.set('port', process.env.PORT || 3000);
+app.set('views', path.join(__dirname, 'views')); //declarando la ruta de las vistas
 
 //Middlewares
 
@@ -12,7 +15,6 @@ const morgan = require('morgan');
 
 
 //Inicializando el servidor
-
-app.listen(3000, () => {
-    console.log(`Servidor creado en el puerto 3000`);
+app.listen(app.get('port'), () => {
+    console.log(`Servidor creado en el puerto ${app.get('port')}`.random);
 });

@@ -1,3 +1,15 @@
 Mongoose
 
         Mongoose es una herramienta de modelado de objetos MongoDB diseñada para trabajar en un entorno asíncrono. Mongoose admite promesas (promises) y devoluciones de llamadas (callbacks).
+
+Path
+
+        Path es un módulo que ya vienen configurado al importar express y se utiliza para homogenizar las rutas
+        de nuestro proyecto según el sistema operativo.
+
+        Para el proyecto, path se estara utilizando para no declarar las rutas *absolutas* de las carpetas donde se
+        encuentran nuestros archvos estaticos (vistas, estilos, imagenes, etc)
+
+        ruta absoluta: C:\Users\thece\Desktop\crud-node-mongo\src\views
+        uso de path: path.join(__dirname, 'views')
+        __dirname sustituye a C:\Users\thece\Desktop\crud-node-mongo\src\
