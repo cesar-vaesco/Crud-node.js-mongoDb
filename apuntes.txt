@@ -1,0 +1,3 @@
+Mongoose
+
+        Mongoose es una herramienta de modelado de objetos MongoDB diseñada para trabajar en un entorno asíncrono. Mongoose admite promesas (promises) y devoluciones de llamadas (callbacks).
