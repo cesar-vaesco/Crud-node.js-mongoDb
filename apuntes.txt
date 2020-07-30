@@ -13,3 +13,10 @@ Path
         ruta absoluta: C:\Users\thece\Desktop\crud-node-mongo\src\views
         uso de path: path.join(__dirname, 'views')
         __dirname sustituye a C:\Users\thece\Desktop\crud-node-mongo\src\
+
+
+Conexión a mongoDB
+
+        En la conexión a mongoDB no es necesario tener la base de datos creada, desde la conexión se puede crear la base de datos. Para que la conexión a la base de datos de mongoDB sea posible es necesario tener levantado el servicio de mongoDB en consola (como administrador y con el comando mongod).
+
+        Las consultas a las bases de datos en mongoDB se pueden realizar desde un cliente o desde consola - terminal  inicializando su visualización con el comando mongo

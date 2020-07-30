@@ -1,9 +1,16 @@
 const express = require('express');
-const app = express();
 const path = require('path');
 const morgan = require('morgan');
+const mongoose = require('mongoose');
+
 const colors = require('colors');
 
+const app = express();
+
+//Connecting to db
+mongoose.connect('mongodb://localhost/crud-mongo')
+    .then(db => console.log('DB connected'.green))
+    .catch(err => console.log(err));
 
 //imports routes
 const indexRoutes = require('./routes/index');
