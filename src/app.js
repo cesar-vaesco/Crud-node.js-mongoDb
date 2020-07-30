@@ -8,8 +8,13 @@ const colors = require('colors');
 const app = express();
 
 //Connecting to db
-mongoose.connect('mongodb://localhost/crud-mongo')
-    .then(db => console.log('DB connected'.green))
+mongoose.connect('mongodb://localhost/crud-mongo', {
+        useCreateIndex: true,
+        useFindAndModify: false,
+        useUnifiedTopology: true,
+        useNewUrlParser: true
+    })
+    .then(db => console.log('DB connected'.zebra))
     .catch(err => console.log(err));
 
 //imports routes
